@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <title> JS Element - 6월 15일 </title>
+    <script src="js/main.js"></script>
+    <style>
+        img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+<button onclick="alertmessage()">메세지를 보여줘</button>
+<script defer>
+    /* - 죽은 코드
+    1번 예시
+    document.write("<h3>마우스를 올려 보세요</h3><br>");
+    document.write("2+5는<br>");
+    // runtime 환경에 의해서 위의 두 문장 이후에 '2초후에' 아래 문장이 실행됨
+    setTimeout(function () {
+        document.write("<mark>7입니다.</mark><br>");
+    }, 2000)
+    //    setTimeout 브라우저 내장 함수
+    //     ,3000 : 3000ms = 3초를 의미
+     */
+    let result = prompt("당신의 이름은 무엇입니까?");
+    document.write(result)
+    let ret=confirm("전송할까요?")
+    function alertmessage(){alert(내가 메세지다!!!)}
+    let disit =1234;
+    let string1="문자1";
+    let string2="문자2";
+    let ret=confirm("string1"+disit+"string2")
+
+</script>
+<section>
+    <!--    <h3>마우스를 올려 보세요</h3>-->
+    <hr>
+    <img src="imagesFor0615/americano.jpeg" alt="coffeeImage"
+         onmouseover="over(this)"
+         onmouseout="out(this)">
+</section>
+</body>
+</html>
+<!---->
+
+
